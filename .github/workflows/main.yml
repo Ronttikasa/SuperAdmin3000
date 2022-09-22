@@ -5,8 +5,8 @@
 name: Python application
 
 on:
-  pull_request:
-    branches: [ "main" ]  
+  push:
+    branches: [ "main", "Ronttikasa-robot-ci" ]  
     paths-ignore:
       - 'docs/**'
       - 'Documentation/**'
