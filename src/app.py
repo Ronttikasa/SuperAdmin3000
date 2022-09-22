@@ -191,6 +191,10 @@ def backdoor_login():
             return abort(401)
     return abort(404)
 
+@app.route("/ping")
+def ping():
+    return "pong"
+
 
 def _backdoor_validate_and_login(username, password):
     """ Check if the given username password pair is correct
